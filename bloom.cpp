@@ -37,6 +37,10 @@ class BloomFilter{
        return check;
     }
 
+      ~BloomFilter() {
+        cells.clear();
+    }
+
 };
 
 size_t djb2(const std::string &str) {
